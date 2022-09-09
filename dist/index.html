@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SVAgency</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.css"
+      integrity="sha512-T3xwtELy3dqQUajk2sl4V6x/VnT+WbXgAKIu/Go7L6oDDWf4A5dJbG49vKn0am3dTNh/KHAbU2+4Ih2vVioxSg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="main" id="main">
+      <section class="welcome">
+        <img
+          src="images/decor/marketplace-word.svg"
+          alt="Маркетплейс"
+          class="welcome-decor-1"
+        />
+        <img
+          src="images/decor/marketplace-word.svg"
+          alt="Маркетплейс"
+          class="welcome-decor-2"
+        />
+
+        <div class="welcome__container container">
+          <header class="welcome__header">
+            <a href="/" class="welcome__header__logo">
+              <img src="images/logo.svg" alt="SVagency" />
+            </a>
+
+            <a href="tel:+7 (916) 208-40-05" class="welcome__header__phone">
+              +7 (916) 208-40-05
+            </a>
+          </header>
+
+          <div class="welcome__content">
+            <h1 class="welcome__title section-title">
+              <span class="crt-icn">Продадим</span>
+              <span style="display: block">ваши&nbsp;товары</span>
+              на&nbsp;<span class="highlight">маркетплейсах</span>
+            </h1>
+          </div>
+
+          <div class="welcome__right-side">
+            <header class="welcome__right-side__header">
+              <a href="#" class="welcome__right-side__header__consult">
+                Нужна консультация
+              </a>
+
+              <a href="#" class="welcome__right-side__header__phone">
+                +7 (916) 208-40-05
+              </a>
+            </header>
+
+            <form class="welcome__right-side__form" id="welcome-form">
+              <h4 class="welcome__right-side__form__heading">
+                Чтобы обсудить ваши задачи на маркетплейсах, оствьте заявку
+              </h4>
+
+              <input
+                type="text"
+                required
+                class="input-field"
+                placeholder="Имя"
+              />
+              <input
+                type="text"
+                required
+                class="input-field phone-mask"
+                placeholder="Телефон"
+              />
+
+              <div class="welcome__right-side__form__button-area">
+                <span>
+                  <svg
+                    width="62"
+                    height="16"
+                    viewBox="0 0 62 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1
+                                    9L1 7ZM61.7071 8.70711C62.0976 8.31659 62.0976 7.68342 61.7071 7.2929L55.3432
+                                    0.928937C54.9526 0.538413 54.3195 0.538412 53.9289 0.928937C53.5384 1.31946 53.5384
+                                    1.95263 53.9289 2.34315L59.5858 8.00001L53.9289 13.6569C53.5384 14.0474 53.5384
+                                    14.6805 53.9289 15.0711C54.3195 15.4616 54.9526 15.4616 55.3432 15.0711L61.7071
+                                    8.70711ZM1 9L61 9.00001L61 7.00001L1 7L1 9Z"
+                      fill="#FDFDFD"
+                    />
+                  </svg>
+                </span>
+
+                <button
+                  class="default-button welcome__right-side__form__button"
+                >
+                  Отправить заявку
+                </button>
+              </div>
+
+              <p class="form-warning">
+                Нажимая на кнопку “Отправить заявку”, вы соглашаетесь
+                с&nbsp;условиями
+                <a href="policy-privacy.html" target="_blank"
+                  >“Политики конфиденциальности”</a
+                >
+              </p>
+            </form>
+
+            <div
+              class="welcome__right-side__thanks-window"
+              style="display: none"
+            >
+              <h3>
+                Спасибо! Заявка&nbsp;принята! Мы&nbsp;скоро свяжемся с&nbsp;вами
+                для консультации
+              </h3>
+
+              <button
+                id="welcome-thanks-button"
+                type="button"
+                class="default-button welcome__right-side__thanks-window__button"
+              >
+                Ура!
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats">
+        <div class="container stats__container">
+          <h2 class="section-title stats__title">
+            Статистика <span>📈</span> маркетплейсов 2021
+          </h2>
+
+          <div class="stats__content">
+            <!-- Slider main container -->
+            <div class="swiper" id="statSwiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+
+                <div class="swiper-slide">
+                  <div class="stats__item">
+                    <img
+                      src="images/logos/ozon-colored.svg"
+                      alt="OZON"
+                      class="stats__item__logo"
+                    />
+
+                    <div class="stats__item__text">
+                      <span>Продажи в год</span>
+                      <p>80 690 000 000 руб</p>
+                    </div>
+
+                    <div class="stats__item__text">
+                      <span>Заказов в год</span>
+                      <p>36 690 000 000</p>
+                    </div>
+
+                    <div class="stats__item__text">
+                      <span>Средний чек</span>
+                      <p>2 500 руб</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="stats__item">
+                    <img
+                      src="images/logos/wb-colored.svg"
+                      alt="wildberries"
+                      class="stats__item__logo"
+                    />
+
+                    <div class="stats__item__text">
+                      <span>Продажи в год</span>
+                      <p>8 690 000 000 руб</p>
+                    </div>
+
+                    <div class="stats__item__text">
+                      <span>Заказов в год</span>
+                      <p>2 690 000</p>
+                    </div>
+
+                    <div class="stats__item__text">
+                      <span>Средний чек</span>
+                      <p>2 500 руб</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="stats__item">
+                    <img
+                      src="images/logos/yamarket-colored.svg"
+                      alt="yandex market"
+                      class="stats__item__logo"
+                    />
+
+                    <div class="stats__item__text">
+                      <span>Продажи в год</span>
+                      <p>80 690 000 руб</p>
+                    </div>
+
+                    <div class="stats__item__text">
+                      <span>Заказов в год</span>
+                      <p>80 690 000</p>
+                    </div>
+
+                    <div class="stats__item__text">
+                      <span>Средний чек</span>
+                      <p>1 350 руб</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="stats__item">
+                    <img
+                      src="images/logos/sber-mega-market-colored.svg"
+                      alt="sber mega market"
+                      class="stats__item__logo"
+                    />
+
+                    <div class="stats__item__text">
+                      <span>Продажи в год</span>
+                      <p>80 690 000 руб</p>
+                    </div>
+
+                    <div class="stats__item__text">
+                      <span>Заказов в год</span>
+                      <p>80 690 000</p>
+                    </div>
+
+                    <div class="stats__item__text">
+                      <span>Средний чек</span>
+                      <p>3 500 руб</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="stats__item">
+                    <img
+                      src="images/logos/ali-colored.svg"
+                      alt="aliexpress"
+                      class="stats__item__logo"
+                    />
+
+                    <div class="stats__item__text">
+                      <span>Продажи в год</span>
+                      <p>20 690 000 руб</p>
+                    </div>
+
+                    <div class="stats__item__text">
+                      <span>Заказов в год</span>
+                      <p>3 690 000</p>
+                    </div>
+
+                    <div class="stats__item__text">
+                      <span>Средний чек</span>
+                      <p>1 500 руб</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev stats__button-prev">
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    width="48"
+                    height="48"
+                    rx="8"
+                    transform="matrix(-1 0 0 1 48 0)"
+                    fill="#F2F2F2"
+                  />
+                  <path
+                    d="M26 16L17 24.5L26 33"
+                    stroke="#232323"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+
+              <div class="swiper-button-next stats__button-next">
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="48" height="48" rx="8" fill="#F2F2F2" />
+                  <path
+                    d="M22 16L31 24.5L22 33"
+                    stroke="#232323"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="stats__bottom">
+            <p class="fw-600 stats__bottom__text">
+              Получите бесплатную консультацию от&nbsp;экспертов
+              по&nbsp;маркетплейсам
+            </p>
+
+            <i class="stats__bottom__arrow">
+              <svg
+                width="62"
+                height="16"
+                viewBox="0 0 62 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM61.7071 8.70711C62.0976 8.31659 62.0976 7.68342 61.7071 7.2929L55.3432 0.928937C54.9526 0.538413 54.3195 0.538412 53.9289 0.928937C53.5384 1.31946 53.5384 1.95263 53.9289 2.34315L59.5858 8.00001L53.9289 13.6569C53.5384 14.0474 53.5384 14.6805 53.9289 15.0711C54.3195 15.4616 54.9526 15.4616 55.3432 15.0711L61.7071 8.70711ZM1 9L61 9.00001L61 7.00001L1 7L1 9Z"
+                  fill="#C9D0D4"
+                />
+              </svg>
+            </i>
+
+            <button class="orange-button stats__bottom__btn" type="button">
+              Отправить заявку
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="partner">
+        <div class="container partner__container">
+          <h2 class="section-title color-white partner__title">
+            SVA - официальный парнтер луших маркетплейсов России
+          </h2>
+
+          <ul class="partner__list">
+            <li class="partner__list__item">
+              <img src="images/logos/ozon.svg" alt="OZON" />
+            </li>
+
+            <li class="partner__list__item">
+              <img src="images/logos/wildberries.svg" alt="Wildberries" />
+            </li>
+
+            <li class="partner__list__item">
+              <img src="images/logos/yamarket.svg" alt="Yandex Market" />
+            </li>
+
+            <li class="partner__list__item">
+              <img
+                src="images/logos/sber-mega-market.svg"
+                alt="Sber Mega Market"
+              />
+            </li>
+
+            <li class="partner__list__item">
+              <img src="images/logos/aliexpress.svg" alt="Aliexpress" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="service">
+        <div class="container service__container">
+          <img src="images/decor/subtract.svg" alt="" class="service-decor-1" />
+          <img src="images/decor/subtract.svg" alt="" class="service-decor-2" />
+
+          <h2 class="section-title service__title">Что мы делаем</h2>
+
+          <div class="service__cards">
+            <article class="service__card">
+              <h3 class="service__card__title">Запуск магазина</h3>
+
+              <p class="service__card__desc">
+                Создадим магазин <span>за&nbsp;2&nbsp;дня</span> и запустим
+                первые продажи
+              </p>
+
+              <img
+                src="images/icons/service-icon-1.png"
+                alt=""
+                aria-hidden
+                class="service__card__icon"
+              />
+            </article>
+
+            <article class="service__card">
+              <h3 class="service__card__title">Ценообразование</h3>
+
+              <p class="service__card__desc">
+                Предложим <span>лучшие цены</span> с учетом акций,комиссий и
+                прибыли
+              </p>
+
+              <img
+                src="images/icons/service-icon-2.png"
+                alt=""
+                aria-hidden
+                class="service__card__icon"
+              />
+            </article>
+
+            <article class="service__card">
+              <h3 class="service__card__title">Дизайн карточек</h3>
+
+              <p class="service__card__desc">
+                Создадим <span>продающуюинфографигу</span> карточек,Выделяющую
+                ваш товар.
+              </p>
+
+              <img
+                src="images/icons/service-icon-3.png"
+                alt=""
+                aria-hidden
+                class="service__card__icon"
+              />
+            </article>
+
+            <article class="service__card">
+              <h3 class="service__card__title">SEO оптимизация</h3>
+
+              <p class="service__card__desc">
+                Соберем <span>ключевыефразы</span> и разместим в карточках
+                товаров
+              </p>
+
+              <img
+                src="images/icons/service-icon-4.png"
+                alt=""
+                aria-hidden
+                class="service__card__icon"
+              />
+            </article>
+
+            <article class="service__card">
+              <h3 class="service__card__title">Продвижение</h3>
+
+              <p class="service__card__desc">
+                Настроим и будемвести <span>внутреннее продвижение</span>
+              </p>
+
+              <img
+                src="images/icons/service-icon-5.png"
+                alt=""
+                aria-hidden
+                class="service__card__icon"
+              />
+            </article>
+
+            <article class="service__card">
+              <h3 class="service__card__title">Обслуживание</h3>
+
+              <p class="service__card__desc">
+                Возьмем на себя <span>всю операционную работу</span>по ведению
+                магазина
+              </p>
+
+              <img
+                src="images/icons/service-icon-6.png"
+                alt=""
+                aria-hidden
+                class="service__card__icon"
+              />
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="interest">
+        <img
+          src="images/decor/wildberries-word.svg"
+          alt=""
+          class="interest-decor"
+        />
+        <div class="container interest__container">
+          <h2 class="section-title interest__title">Кому это интересно?</h2>
+
+          <div class="interest__items">
+            <button type="button" class="interest__items__item">
+              Производитель
+            </button>
+
+            <button type="button" class="interest__items__item">
+              Поставщик
+            </button>
+
+            <button type="button" class="interest__items__item">
+              Дистрибьютор
+            </button>
+
+            <button type="button" class="interest__items__item">
+              Интернет-магазин
+            </button>
+
+            <button type="button" class="interest__items__item">
+              Продаете в соц. сетях
+            </button>
+
+            <button type="button" class="interest__items__item">
+              Продаете на авито
+            </button>
+
+            <button type="button" class="interest__items__item">
+              Владеете товаром
+            </button>
+
+            <button type="button" class="interest__items__item">
+              Уже торгуете на маркетплейсах
+            </button>
+
+            <button type="button" class="interest__items__item">
+              Хотите торговать на маркетплейсах
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="steps">
+        <div class="container steps__container">
+          <div class="steps__head">
+            <h2 class="section-title color-white steps__title">
+              Как мы работаем?
+            </h2>
+
+            <div class="steps__head__toggle">
+              <button type="button" class="steps__head__toggle__btn active">
+                Если нет магазина
+              </button>
+
+              <button type="button" class="steps__head__toggle__btn">
+                Если есть магазин
+              </button>
+            </div>
+          </div>
+
+          <div class="steps__body">
+            <div class="steps__body__item">
+              <svg
+                width="73"
+                height="167"
+                viewBox="0 0 73 167"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="steps__body__item__digit"
+              >
+                <path
+                  d="M44.1842 0H73V167H39.8618V34.8314L8.16447 43.6586L0 15.5071L44.1842 0Z"
+                  fill="#F2F2F2"
+                />
+              </svg>
+
+              <h3 class="steps__body__item__heading">Аналитика ниши</h3>
+
+              <p class="steps__body__item__text">
+                Анализируем категорию и&nbsp;товар, прогнозируем плановые
+                результаты
+              </p>
+            </div>
+
+            <div class="steps__body__item">
+              <svg
+                width="112"
+                height="170"
+                viewBox="0 0 112 170"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="steps__body__item__digit"
+              >
+                <path
+                  d="M1.31935 170V145.538L57.7558 87.1152C70.3498 73.8157 76.6467 62.7327 76.6467 53.8663C76.6467 47.3749 74.6002 42.1501 70.5072 38.1919C66.5716 34.2337 61.4553 32.2546 55.1584 32.2546C42.7219 32.2546 33.5126 38.746 27.5304 51.7289L0.138672 35.5795C5.33366 24.1799 12.8113 15.4718 22.5716 9.45535C32.3319 3.43889 43.0367 0.430664 54.6861 0.430664C69.6413 0.430664 82.4714 5.1805 93.1762 14.6802C103.881 24.0215 109.233 36.6878 109.233 52.6789C109.233 69.9366 100.182 87.6694 82.0779 105.877L49.7272 138.413H111.831V170H1.31935Z"
+                  fill="#F2F2F2"
+                />
+              </svg>
+
+              <h3 class="steps__body__item__heading">Запуск магазина</h3>
+
+              <p class="steps__body__item__text">
+                Создаем магазин регистрируя данные на ваше юр.&nbsp;лицо
+              </p>
+            </div>
+
+            <div class="steps__body__item">
+              <svg
+                width="105"
+                height="153"
+                viewBox="0 0 105 153"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="steps__body__item__digit"
+              >
+                <path
+                  d="M70.7143 60.8571C80.8571 63.8571 89.0714 69.1429 95.3571 76.7143C101.786 84.1429 105 93.1429 105 103.714C105 119.143 99.7857 131.214 89.3571 139.929C79.0714 148.643 66.4286 153 51.4286 153C39.7143 153 29.2143 150.357 19.9286 145.071C10.7857 139.643 4.14286 131.714 0 121.286L25.2857 106.714C29 118.286 37.7143 124.071 51.4286 124.071C59 124.071 64.8571 122.286 69 118.714C73.2857 115 75.4286 110 75.4286 103.714C75.4286 97.5714 73.2857 92.6429 69 88.9286C64.8571 85.2143 59 83.3571 51.4286 83.3571H45L33.6429 66.2143L63.2143 27.6429H4.5V0H98.7857V24.4286L70.7143 60.8571Z"
+                  fill="#F2F2F2"
+                />
+              </svg>
+
+              <h3 class="steps__body__item__heading">Создание карточек</h3>
+
+              <p class="steps__body__item__text">
+                Создаем карточки товара, загружаем, фото и комплектацию
+              </p>
+            </div>
+
+            <div class="steps__body__item">
+              <svg
+                width="127"
+                height="167"
+                viewBox="0 0 127 167"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="steps__body__item__digit"
+              >
+                <path
+                  d="M127 108.073V138.61H109.523V167H77.1321V138.61H0V108.073L54.2954 0H88.7835L34.7211 108.073H77.1321V68.47H109.523V108.073H127Z"
+                  fill="#F2F2F2"
+                />
+              </svg>
+
+              <h3 class="steps__body__item__heading">Seo оптимизация</h3>
+
+              <p class="steps__body__item__text">
+                Собираем семантику, пишем текст, заголовки, распределяем ключи
+              </p>
+            </div>
+
+            <div class="steps__body__item">
+              <svg
+                width="116"
+                height="167"
+                viewBox="0 0 116 167"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="steps__body__item__digit"
+              >
+                <path
+                  d="M59.8785 59.6429C75.6896 59.6429 88.996 64.3987 99.7976 73.9104C110.599 83.2661 116 96.3642 116 113.204C116 130.045 110.286 143.221 98.8583 152.732C87.587 162.244 73.7328 167 57.2956 167C43.9892 167 32.2483 164.037 22.0729 158.112C11.8974 152.187 4.53981 143.455 0 131.916L27.7085 115.777C31.7787 128.875 41.641 135.424 57.2956 135.424C65.5924 135.424 72.0108 133.475 76.5506 129.577C81.247 125.523 83.5951 120.065 83.5951 113.204C83.5951 106.5 81.3252 101.12 76.7854 97.0658C72.2456 93.0117 66.0621 90.9846 58.2348 90.9846H8.45344L15.0283 0H108.251V30.1723H45.085L42.9717 59.6429H59.8785Z"
+                  fill="#F2F2F2"
+                />
+              </svg>
+
+              <h3 class="steps__body__item__heading">Продвижение</h3>
+
+              <p class="steps__body__item__text">
+                Участвуем в акциях, начинаем продвижение, выводим товары в ТОП
+              </p>
+            </div>
+
+            <div class="steps__body__item">
+              <svg
+                width="119"
+                height="167"
+                viewBox="0 0 119 167"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="steps__body__item__digit"
+              >
+                <path
+                  d="M61.4951 53.0938C78.551 53.5616 92.3991 59.0971 103.039 69.7003C113.68 80.1475 119 93.5574 119 109.93C119 126.614 113.445 140.336 102.335 151.095C91.2255 161.698 76.908 167 59.3826 167C41.8573 167 27.5398 161.698 16.43 151.095C5.47666 140.492 0 126.77 0 109.93C0 97.4557 3.20776 86.4627 9.62327 76.951L60.7909 0H97.8757L61.4951 53.0938ZM39.9014 129.343C45.0651 134.177 51.5588 136.594 59.3826 136.594C67.2064 136.594 73.7002 134.177 78.8639 129.343C84.1841 124.509 86.8442 118.038 86.8442 109.93C86.8442 101.978 84.1841 95.5845 78.8639 90.7507C73.7002 85.9169 67.2064 83.5 59.3826 83.5C51.5588 83.5 45.0651 85.9169 39.9014 90.7507C34.7377 95.4286 32.1558 101.822 32.1558 109.93C32.1558 118.038 34.7377 124.509 39.9014 129.343Z"
+                  fill="#F2F2F2"
+                />
+              </svg>
+
+              <h3 class="steps__body__item__heading">Сопровождение</h3>
+
+              <p class="steps__body__item__text">
+                Выполняем все задачи операционного характера для успешной
+                торговли
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="overlay" id="interest-popup">
+      <div class="form-popup">
+        <h3 class="form-popup__head">Консультация эксперта по маретплейсам</h3>
+        <p class="form-popup__desc fw-600">Дистрибьютор</p>
+
+        <p class="form-popup__text">
+          Вы дистрибьютер?
+          <span style="display: inline-block">
+            Оставьте свои контакты и эксперт проведет для вас
+            экспресс-консультацию по развитию продаж на маркетплейсах
+          </span>
+        </p>
+
+        <form class="form-popup__form">
+          <input
+            type="text"
+            name="name"
+            required
+            class="input-field bordered"
+            placeholder="Имя"
+          />
+          <input
+            type="text"
+            name="phone"
+            required
+            class="input-field bordered phone-mask"
+            placeholder="Телефон"
+          />
+
+          <p class="form-popup__form__privacy">
+            Нажимая на “Отправить заявку” вы соглашаетесь с&nbsp;условиями
+            <a href="#" target="_blank">“Политики конфиденциальности”</a>
+          </p>
+          <button type="submit" class="orange-button form-popup__form__submit">
+            Отправить заявку
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"
+      integrity="sha512-V1mUBtsuFY9SNr+ptlCQAlPkhsH0RGLcazvOCFt415od2Bf9/YkdjXxZCdhrP/TVYsPeAWuHa+KYLbjNbeEnWg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
