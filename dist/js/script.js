@@ -359,4 +359,17 @@ document.addEventListener("DOMContentLoaded", function () {
     // });
 
   }
+  {
+    document.addEventListener("keydown", function (e) {
+      if (e.which === 27) {
+        var _overlays = document.querySelectorAll(".overlay");
+
+        _overlays.forEach(function (overlay) {
+          return overlay.classList.remove("active");
+        });
+
+        document.body.style.overflow = "unset";
+      }
+    });
+  }
 });
