@@ -231,6 +231,12 @@ li {
   top: 0;
   left: -250px;
 }
+@media (max-width: 500px) {
+  .overlay .back-button {
+    left: 0;
+    top: -70px;
+  }
+}
 
 .form-popup {
   position: absolute;
@@ -242,6 +248,12 @@ li {
   max-width: 380px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 8px 16px rgba(0, 0, 0, 0.08);
   border-radius: 4px;
+}
+@media (max-width: 500px) {
+  .form-popup {
+    width: 95%;
+    padding: 20px;
+  }
 }
 
 .form-popup__head {
@@ -1621,4 +1633,88 @@ li {
   .offer__contacts {
     margin-top: 50px;
   }
+}
+
+.privacy__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 90px;
+  margin-bottom: 40px;
+}
+@media (max-width: 500px) {
+  .privacy__head {
+    padding-top: 40px;
+  }
+}
+
+.privacy h1 {
+  font-size: 70px;
+  letter-spacing: 0.04em;
+}
+@media (max-width: 500px) {
+  .privacy h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  .privacy__head__logo img {
+    width: 150px;
+  }
+}
+
+.not-found__content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  align-items: center;
+}
+
+.not-found__content h1 {
+  font-size: 70px;
+  display: flex;
+  align-items: center;
+}
+.not-found__content h1 img {
+  margin-left: 10px;
+  display: block;
+}
+@media (max-width: 500px) {
+  .not-found__content h1 {
+    font-size: 24px;
+    flex-direction: column-reverse;
+  }
+  .not-found__content h1 img {
+    width: 80px;
+    margin-bottom: 15px;
+    margin-left: 0;
+  }
+}
+
+.not-found__main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.not-found__main .footer {
+  margin-top: auto;
+}
+
+.not-found__head {
+  padding-top: 90px;
+}
+@media (max-width: 500px) {
+  .not-found__head {
+    padding-top: 40px;
+  }
+}
+
+.not-found {
+  margin-bottom: 40px;
+}
+
+.not-found__picture {
+  width: 100%;
 }
