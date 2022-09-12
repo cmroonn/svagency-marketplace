@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* Base */
+@import "../fonts/Gilroy/stylesheet.css";
 body {
   padding: 0;
   margin: 0;
