@@ -47,9 +47,29 @@
 
           <div class="welcome__content">
             <h1 class="welcome__title section-title">
-              <span class="crt-icn">Продадим</span>
-              <span style="display: block">ваши&nbsp;товары</span>
-              на&nbsp;<span class="highlight">маркетплейсах</span>
+              <span class="crt-icn animate__fadeInLeft animate__animated">
+                Продадим
+
+                <span
+                  style="display: inline-block; font-size: 0.8em"
+                  class="animate__fadeInLeft animate__animated animate__delay-5s animate__delay-04"
+                >
+                  🛒
+                </span>
+              </span>
+              <span
+                style="display: block"
+                class="animate__fadeInLeft animate__animated animate__delay-2s animate__delay-05"
+              >
+                ваши&nbsp;товары
+              </span>
+
+              <span
+                style="display: block"
+                class="animate__fadeInLeft animate__animated animate__delay-4s animate__delay-05"
+              >
+                на&nbsp;<span class="highlight">маркетплейсах</span>
+              </span>
             </h1>
           </div>
 
@@ -64,17 +84,12 @@
               </a>
             </header>
 
-            <form class="welcome__right-side__form" id="welcome-form">
+            <form class="welcome__right-side__form active" id="welcome-form">
               <h4 class="welcome__right-side__form__heading">
                 Чтобы обсудить ваши задачи на маркетплейсах, оствьте заявку
               </h4>
 
-              <input
-                type="text"
-                required
-                class="input-field"
-                placeholder="Имя"
-              />
+              <input type="text" class="input-field" placeholder="Имя" />
               <input
                 type="text"
                 required
@@ -119,10 +134,7 @@
               </p>
             </form>
 
-            <div
-              class="welcome__right-side__thanks-window"
-              style="display: none"
-            >
+            <div class="welcome__right-side__thanks-window">
               <h3>
                 Спасибо! Заявка&nbsp;принята! Мы&nbsp;скоро свяжемся с&nbsp;вами
                 для консультации
@@ -360,26 +372,51 @@
           </h2>
 
           <ul class="partner__list">
-            <li class="partner__list__item">
+            <li
+              class="partner__list__item animate__animated animate__fadeIn wow"
+              data-wow-duration="1s"
+              data-wow-delay="0.1s"
+              data-wow-offset="0"
+            >
               <img src="images/logos/ozon.svg" alt="OZON" />
             </li>
 
-            <li class="partner__list__item">
+            <li
+              class="partner__list__item animate__animated animate__fadeIn wow"
+              data-wow-duration="0.6s"
+              data-wow-delay="0.2s"
+              data-wow-offset="0"
+            >
               <img src="images/logos/wildberries.svg" alt="Wildberries" />
             </li>
 
-            <li class="partner__list__item">
+            <li
+              class="partner__list__item animate__animated animate__fadeIn wow"
+              data-wow-duration="1s"
+              data-wow-delay="0.3s"
+              data-wow-offset="0"
+            >
               <img src="images/logos/yamarket.svg" alt="Yandex Market" />
             </li>
 
-            <li class="partner__list__item">
+            <li
+              class="partner__list__item animate__animated animate__fadeIn wow"
+              data-wow-duration="1s"
+              data-wow-delay="0.4s"
+              data-wow-offset="0"
+            >
               <img
                 src="images/logos/sber-mega-market.svg"
                 alt="Sber Mega Market"
               />
             </li>
 
-            <li class="partner__list__item">
+            <li
+              class="partner__list__item animate__animated animate__fadeIn wow"
+              data-wow-duration="1s"
+              data-wow-delay="0.5s"
+              data-wow-offset="0"
+            >
               <img src="images/logos/aliexpress.svg" alt="Aliexpress" />
             </li>
           </ul>
@@ -393,7 +430,7 @@
 
           <h2 class="section-title service__title">Что мы делаем</h2>
 
-          <div class="service__cards">
+          <div class="service__cards" id="service-1">
             <article class="service__card">
               <h3 class="service__card__title">Запуск магазина</h3>
 
@@ -430,7 +467,7 @@
               <h3 class="service__card__title">Дизайн карточек</h3>
 
               <p class="service__card__desc">
-                Создадим <span>продающуюинфографигу</span> карточек,Выделяющую
+                Создадим <span>продающую инфографигу</span> карточек, выделяющую
                 ваш товар.
               </p>
 
@@ -446,7 +483,7 @@
               <h3 class="service__card__title">SEO оптимизация</h3>
 
               <p class="service__card__desc">
-                Соберем <span>ключевыефразы</span> и разместим в карточках
+                Соберем <span>ключевые фразы</span> и разместим в карточках
                 товаров
               </p>
 
@@ -549,17 +586,25 @@
             </h2>
 
             <div class="steps__head__toggle">
-              <button type="button" class="steps__head__toggle__btn active">
+              <button
+                type="button"
+                class="steps__head__toggle__btn active"
+                data-id="steps-1"
+              >
                 Если нет магазина
               </button>
 
-              <button type="button" class="steps__head__toggle__btn">
+              <button
+                type="button"
+                class="steps__head__toggle__btn"
+                data-id="steps-2"
+              >
                 Если есть магазин
               </button>
             </div>
           </div>
 
-          <div class="steps__body">
+          <div class="steps__body active" id="steps-1">
             <div class="steps__body__item">
               <svg
                 width="73"
@@ -694,6 +739,146 @@
               </p>
             </div>
           </div>
+
+          <div class="steps__body" id="steps-2">
+            <div class="steps__body__item">
+              <svg
+                width="73"
+                height="167"
+                viewBox="0 0 73 167"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="steps__body__item__digit"
+              >
+                <path
+                  d="M44.1842 0H73V167H39.8618V34.8314L8.16447 43.6586L0 15.5071L44.1842 0Z"
+                  fill="#F2F2F2"
+                />
+              </svg>
+
+              <h3 class="steps__body__item__heading">Анализ магазина</h3>
+
+              <p class="steps__body__item__text">
+                Анализируем карточки, SEO, позиции, конкуренцию цены, дизайн
+                и&nbsp;статистику
+              </p>
+            </div>
+
+            <div class="steps__body__item">
+              <svg
+                width="112"
+                height="170"
+                viewBox="0 0 112 170"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="steps__body__item__digit"
+              >
+                <path
+                  d="M1.31935 170V145.538L57.7558 87.1152C70.3498 73.8157 76.6467 62.7327 76.6467 53.8663C76.6467 47.3749 74.6002 42.1501 70.5072 38.1919C66.5716 34.2337 61.4553 32.2546 55.1584 32.2546C42.7219 32.2546 33.5126 38.746 27.5304 51.7289L0.138672 35.5795C5.33366 24.1799 12.8113 15.4718 22.5716 9.45535C32.3319 3.43889 43.0367 0.430664 54.6861 0.430664C69.6413 0.430664 82.4714 5.1805 93.1762 14.6802C103.881 24.0215 109.233 36.6878 109.233 52.6789C109.233 69.9366 100.182 87.6694 82.0779 105.877L49.7272 138.413H111.831V170H1.31935Z"
+                  fill="#F2F2F2"
+                />
+              </svg>
+
+              <h3 class="steps__body__item__heading">Рекомендации</h3>
+
+              <p class="steps__body__item__text">
+                Выдаем рекомендации по&nbsp;повышению продаж и&nbsp;улучшению
+                показателей
+              </p>
+            </div>
+
+            <div class="steps__body__item">
+              <svg
+                width="105"
+                height="153"
+                viewBox="0 0 105 153"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="steps__body__item__digit"
+              >
+                <path
+                  d="M70.7143 60.8571C80.8571 63.8571 89.0714 69.1429 95.3571 76.7143C101.786 84.1429 105 93.1429 105 103.714C105 119.143 99.7857 131.214 89.3571 139.929C79.0714 148.643 66.4286 153 51.4286 153C39.7143 153 29.2143 150.357 19.9286 145.071C10.7857 139.643 4.14286 131.714 0 121.286L25.2857 106.714C29 118.286 37.7143 124.071 51.4286 124.071C59 124.071 64.8571 122.286 69 118.714C73.2857 115 75.4286 110 75.4286 103.714C75.4286 97.5714 73.2857 92.6429 69 88.9286C64.8571 85.2143 59 83.3571 51.4286 83.3571H45L33.6429 66.2143L63.2143 27.6429H4.5V0H98.7857V24.4286L70.7143 60.8571Z"
+                  fill="#F2F2F2"
+                />
+              </svg>
+
+              <h3 class="steps__body__item__heading">Планирование</h3>
+
+              <p class="steps__body__item__text">
+                Планируем результат который сможем достигнуть при внедрении
+                изменений
+              </p>
+            </div>
+
+            <div class="steps__body__item">
+              <svg
+                width="127"
+                height="167"
+                viewBox="0 0 127 167"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="steps__body__item__digit"
+              >
+                <path
+                  d="M127 108.073V138.61H109.523V167H77.1321V138.61H0V108.073L54.2954 0H88.7835L34.7211 108.073H77.1321V68.47H109.523V108.073H127Z"
+                  fill="#F2F2F2"
+                />
+              </svg>
+
+              <h3 class="steps__body__item__heading">Внедрение</h3>
+
+              <p class="steps__body__item__text">
+                Внедряем согласованный список работ и&nbsp;строим коммуникацию
+                с&nbsp;вами
+              </p>
+            </div>
+
+            <div class="steps__body__item">
+              <svg
+                width="116"
+                height="167"
+                viewBox="0 0 116 167"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="steps__body__item__digit"
+              >
+                <path
+                  d="M59.8785 59.6429C75.6896 59.6429 88.996 64.3987 99.7976 73.9104C110.599 83.2661 116 96.3642 116 113.204C116 130.045 110.286 143.221 98.8583 152.732C87.587 162.244 73.7328 167 57.2956 167C43.9892 167 32.2483 164.037 22.0729 158.112C11.8974 152.187 4.53981 143.455 0 131.916L27.7085 115.777C31.7787 128.875 41.641 135.424 57.2956 135.424C65.5924 135.424 72.0108 133.475 76.5506 129.577C81.247 125.523 83.5951 120.065 83.5951 113.204C83.5951 106.5 81.3252 101.12 76.7854 97.0658C72.2456 93.0117 66.0621 90.9846 58.2348 90.9846H8.45344L15.0283 0H108.251V30.1723H45.085L42.9717 59.6429H59.8785Z"
+                  fill="#F2F2F2"
+                />
+              </svg>
+
+              <h3 class="steps__body__item__heading">Первые результаты</h3>
+
+              <p class="steps__body__item__text">
+                Делаем срез результатов после первых внедрений и&nbsp;выдаем
+                аналитику
+              </p>
+            </div>
+
+            <div class="steps__body__item">
+              <svg
+                width="119"
+                height="167"
+                viewBox="0 0 119 167"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="steps__body__item__digit"
+              >
+                <path
+                  d="M61.4951 53.0938C78.551 53.5616 92.3991 59.0971 103.039 69.7003C113.68 80.1475 119 93.5574 119 109.93C119 126.614 113.445 140.336 102.335 151.095C91.2255 161.698 76.908 167 59.3826 167C41.8573 167 27.5398 161.698 16.43 151.095C5.47666 140.492 0 126.77 0 109.93C0 97.4557 3.20776 86.4627 9.62327 76.951L60.7909 0H97.8757L61.4951 53.0938ZM39.9014 129.343C45.0651 134.177 51.5588 136.594 59.3826 136.594C67.2064 136.594 73.7002 134.177 78.8639 129.343C84.1841 124.509 86.8442 118.038 86.8442 109.93C86.8442 101.978 84.1841 95.5845 78.8639 90.7507C73.7002 85.9169 67.2064 83.5 59.3826 83.5C51.5588 83.5 45.0651 85.9169 39.9014 90.7507C34.7377 95.4286 32.1558 101.822 32.1558 109.93C32.1558 118.038 34.7377 124.509 39.9014 129.343Z"
+                  fill="#F2F2F2"
+                />
+              </svg>
+
+              <h3 class="steps__body__item__heading">Сопровождение</h3>
+
+              <p class="steps__body__item__text">
+                Выводим новые стандарты на&nbsp;обслуживание магазина
+                на&nbsp;постоянной основе
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -705,7 +890,8 @@
         <div class="manager__personal">
           <div class="manager__personal__content">
             <h2 class="section-title manager__personal__title">
-              <span>🐝</span> Личный менеджер
+              <span id="bee" style="display: inline-block">🐝</span> Личный
+              менеджер
             </h2>
 
             <div class="swiper manager__personal__carousel" id="managerSwiper">
@@ -733,8 +919,8 @@
                 <div class="swiper-slide">
                   <div
                     class="manager__personal__item"
-                    data-name="Марк"
-                    data-role="Хороший человек"
+                    data-name="Матвей"
+                    data-role="Менеджер проекта"
                   >
                     <img src="images/manager-3.png" alt="" />
                   </div>
@@ -946,7 +1132,7 @@
           </h2>
 
           <div class="offer__wrapper">
-            <form class="offer__wrapper__form" id="offer-form">
+            <form class="offer__wrapper__form active" id="offer-form">
               <img
                 src="images/icons/hand.png"
                 alt=""
@@ -957,7 +1143,6 @@
                 type="text"
                 placeholder="Имя"
                 name="name"
-                required
                 class="input-field bordered"
               />
 
@@ -977,7 +1162,7 @@
               </button>
             </form>
 
-            <div class="offer__wrapper__bottom">
+            <div class="offer__wrapper__bottom active">
               <p class="offer__wrapper__bottom__text">
                 Эксперт свяжется с&nbsp;вами и&nbsp;проконсультирует
                 по&nbsp;вопросам старта и&nbsp;развития продаж
@@ -987,6 +1172,30 @@
                 Нажимая на “Отправить заявку” вы соглашаетесь с условиями
                 <a href="/privacy"> “Политики конфиденциальности” </a>
               </p>
+            </div>
+
+            <div class="offer__thanks" id="offerThanks">
+              <img
+                src="images/icons/ok.png"
+                alt=""
+                class="offer__thanks__icon"
+              />
+              <div class="offer__thanks__text">
+                <h2>Ваша заявка принята! Скоро свяжемся!</h2>
+
+                <p>
+                  Эксперт свяжется с вамии проконсультирует по вопросам старта и
+                  развития продаж
+                </p>
+              </div>
+
+              <button
+                class="offer__thanks__btn orange-button welcome__right-side__thanks-window__button"
+                type="button"
+                id="offerThanksButton"
+              >
+                Ура!
+              </button>
             </div>
 
             <div class="offer__contacts">
@@ -1006,9 +1215,15 @@
           <div class="footer__content">
             <p>SVA, 2022</p>
 
-            <a href="#"> Политика конфиденциальности </a>
+            <a href="/privacy" target="_blank" class="footer__content__privacy">
+              Политика конфиденциальности
+            </a>
 
-            <a href="#" class="footer__content__developments">
+            <a
+              href="https://behance.net/svagency"
+              target="_blank"
+              class="footer__content__developments"
+            >
               site development
               <svg
                 width="38"
@@ -1116,7 +1331,6 @@
           <input
             type="text"
             name="name"
-            required
             class="input-field bordered"
             placeholder="Имя"
           />
@@ -1170,7 +1384,6 @@
           <input
             type="text"
             name="name"
-            required
             class="input-field bordered"
             placeholder="Имя"
           />
@@ -1190,6 +1403,42 @@
             Отправить заявку
           </button>
         </form>
+      </div>
+    </div>
+
+    <div class="overlay" id="thanks-popup">
+      <div class="form-popup">
+        <button type="button" class="back-button" id="closeThanksPopup">
+          <svg
+            width="26"
+            height="12"
+            viewBox="0 0 26 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M25 6.75C25.4142 6.75 25.75 6.41421 25.75 6C25.75 5.58579 25.4142 5.25 25 5.25V6.75ZM0.469669 5.46967C0.176777 5.76256 0.176777 6.23744 0.469669 6.53033L5.24264 11.3033C5.53553 11.5962 6.01041 11.5962 6.3033 11.3033C6.59619 11.0104 6.59619 10.5355 6.3033 10.2426L2.06066 6L6.3033 1.75736C6.59619 1.46447 6.59619 0.989593 6.3033 0.696699C6.01041 0.403806 5.53553 0.403806 5.24264 0.696699L0.469669 5.46967ZM25 5.25L1 5.25V6.75L25 6.75V5.25Z"
+              fill="#232323"
+            />
+          </svg>
+
+          Назад
+        </button>
+
+        <h3 class="form-popup__head">Спасибо!<br />Ваша заявка принята!</h3>
+
+        <p class="form-popup__text">
+          Мы скоро свяжемся с&nbsp;вами для&nbsp;консультации
+        </p>
+
+        <button
+          type="button"
+          class="orange-button welcome__right-side__thanks-window__button"
+          id="thanks-popup-button"
+          style="margin: auto"
+        >
+          Ура!
+        </button>
       </div>
     </div>
 
@@ -1225,6 +1474,16 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://unpkg.com/imask"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="js/script.js"></script>
+
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
