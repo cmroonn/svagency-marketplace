@@ -24,6 +24,7 @@ button {
   font-family: "Gilroy", sans-serif;
   outline: none !important;
   appearance: none !important;
+  -webkit-tap-highlight-color: transparent !important;
 }
 input:focus, input:active,
 select:focus,
