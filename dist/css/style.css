@@ -912,6 +912,24 @@ li {
   color: #fff;
   transition: 0.2s ease;
 }
+@media (max-width: 500px) {
+  .interest__items__item {
+    background-color: #ff8a40;
+    color: #fff;
+  }
+  .interest__items__item:after {
+    content: "";
+    width: 33px;
+    height: 33px;
+    margin-left: 12px;
+    background-image: url("../images/icons/finger-print.svg");
+    background-size: cover;
+    display: block;
+  }
+  .interest__items__item span {
+    width: 170px;
+  }
+}
 
 .interest-decor {
   position: absolute;
@@ -1440,11 +1458,6 @@ li {
 
 .manager__personal__carousel {
   max-width: 310px;
-}
-@media (max-width: 500px) {
-  .manager__personal__carousel .swiper-wrapper {
-    justify-content: center;
-  }
 }
 
 .manager__personal__nav {
