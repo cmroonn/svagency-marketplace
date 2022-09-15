@@ -11,39 +11,39 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 var interestPopupText = {
   0: {
     name: "Производитель",
-    text: "Вы Производитель? Оставьте свои контакты и эксперт проведет для вас консультацию по развитию продаж на маркетплейсах и построению розничного сбыта"
+    text: "Вы&nbsp;Производитель? Оставьте свои контакты и&nbsp;эксперт проведет для&nbsp;вас консультацию по&nbsp;развитию продаж на&nbsp;маркетплейсах и&nbsp;построению розничного сбыта"
   },
   1: {
     name: "Поставщик",
-    text: "Вы Поставщик? Оставьте свои контакты и эксперт проведет для вас экспресс-консультацию по развитию продаж на маркетплейсах"
+    text: "Вы&nbsp;Поставщик? Оставьте свои контакты и&nbsp;эксперт проведет для&nbsp;вас экспресс-консультацию по&nbsp;развитию продаж на&nbsp;маркетплейсах"
   },
   2: {
     name: "Дистрибьютор",
-    text: "Вы дистрибьютор? Оставьте свои контакты и эксперт проведет для вас консультацию по развитию продаж на маркетплейсах"
+    text: "Вы дистрибьютор? Оставьте свои контакты и&nbsp;эксперт проведет для вас консультацию по&nbsp;развитию продаж на&nbsp;маркетплейсах"
   },
   3: {
     name: "Интернет-магазин",
-    text: "Владеете интернет-магазином? Оставьте свои контакты и эксперт проведет для вас консультацию по развитию продаж на маркетплейсах и реформации вашего магазина"
+    text: "Владеете интернет-магазином? Оставьте свои контакты и&nbsp;эксперт проведет для вас консультацию по&nbsp;развитию продаж на&nbsp;маркетплейсах и&nbsp;реформации вашего магазина"
   },
   4: {
     name: "Продаете в соц. сетях",
-    text: "Вы продаете товары в соц. сетях? Оставьте свои контакты и эксперт проведет для вас консультацию по развитию продаж на маркетплейсах"
+    text: "Вы продаете товары в соц. сетях? Оставьте свои контакты и&nbsp;эксперт проведет для вас консультацию по&nbsp;развитию продаж на&nbsp;маркетплейсах"
   },
   5: {
     name: "Продаете на авито",
-    text: "Вы продаете товары на Авито? Оставьте свои контакты и эксперт проведет для вас консультацию по развитию продаж на маркетплейсах"
+    text: "Вы продаете товары на Авито? Оставьте свои контакты и&nbsp;эксперт проведет для вас консультацию по&nbsp;развитию продаж на&nbsp;маркетплейсах"
   },
   6: {
     name: "Владеете товаром",
-    text: "Обладаете ликвидным товаром? Оставьте свои контакты и эксперт проведет для вас консультацию по развитию продаж на маркетплейсах"
+    text: "Обладаете ликвидным товаром? Оставьте свои контакты и&nbsp;эксперт проведет для вас консультацию по&nbsp;развитию продаж на&nbsp;маркетплейсах"
   },
   7: {
     name: "Уже торгуете на маркетплейсах",
-    text: "Уже торгуете на маркетплейсах? Оставьте свои контакты и эксперт проведет для вас консультацию по развитию ваших продаж и увеличению прибыли"
+    text: "Уже торгуете на маркетплейсах? Оставьте свои контакты и&nbsp;эксперт проведет для вас консультацию по&nbsp;развитию ваших продаж и&nbsp;увеличению прибыли"
   },
   8: {
     name: "Хотите торговать на маркетплейсах",
-    text: "Хотите торгвать на маркетплейсах? Оставьте свои контакты и эксперт проведет для вас консультацию по развитию продаж на маркетплейсах"
+    text: "Хотите торгвать на маркетплейсах? Оставьте свои контакты и&nbsp;эксперт проведет для вас консультацию по&nbsp;развитию продаж на&nbsp;маркетплейсах"
   }
 };
 
@@ -190,8 +190,8 @@ document.addEventListener("DOMContentLoaded", function () {
       popup.dataset.current = targetId;
       var nameWrapper = document.getElementById("interest-popup-name"),
           textWrapper = document.getElementById("interest-popup-text");
-      nameWrapper.innerText = interestPopupText[targetId].name;
-      textWrapper.innerText = interestPopupText[targetId].text;
+      nameWrapper.innerHTML = interestPopupText[targetId].name;
+      textWrapper.innerHTML = interestPopupText[targetId].text;
       openPopup("interest-popup");
     });
   });
@@ -205,12 +205,12 @@ document.addEventListener("DOMContentLoaded", function () {
     var length = Object.keys(interestPopupText).length;
 
     if (length - 1 >= currentId) {
-      nameWrapper.innerText = interestPopupText[currentId].name;
-      textWrapper.innerText = interestPopupText[currentId].text;
+      nameWrapper.innerHTML = interestPopupText[currentId].name;
+      textWrapper.innerHTML = interestPopupText[currentId].text;
       popup.dataset.current = currentId;
     } else {
-      nameWrapper.innerText = interestPopupText[0].name;
-      textWrapper.innerText = interestPopupText[0].text;
+      nameWrapper.innerHTML = interestPopupText[0].name;
+      textWrapper.innerHTML = interestPopupText[0].text;
       popup.dataset.current = 0;
     }
   });
@@ -223,12 +223,12 @@ document.addEventListener("DOMContentLoaded", function () {
         textWrapper = document.getElementById("interest-popup-text");
 
     if (currentId !== -1) {
-      nameWrapper.innerText = interestPopupText[currentId].name;
-      textWrapper.innerText = interestPopupText[currentId].text;
+      nameWrapper.innerHTML = interestPopupText[currentId].name;
+      textWrapper.innerHTML = interestPopupText[currentId].text;
       popup.dataset.current = currentId;
     } else {
-      nameWrapper.innerText = interestPopupText[8].name;
-      textWrapper.innerText = interestPopupText[8].text;
+      nameWrapper.innerHTML = interestPopupText[8].name;
+      textWrapper.innerHTML = interestPopupText[8].text;
       popup.dataset.current = 8;
     }
   });
