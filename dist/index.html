@@ -48,26 +48,39 @@
 
           <div class="welcome__content">
             <h1 class="welcome__title section-title">
-              <span class="crt-icn animate__fadeInLeft animate__animated">
+              <span
+                class="crt-icn animate__fadeInLeft animate__animated wow"
+                data-wow-duration="1s"
+                data-wow-offset="0"
+              >
                 Продадим
 
                 <span
                   style="display: inline-block; font-size: 0.8em"
-                  class="animate__fadeInLeft animate__animated animate__delay-5s animate__delay-04"
+                  class="animate__fadeInLeft animate__animated wow"
+                  data-wow-duration="1s"
+                  data-wow-delay="1.5s"
+                  data-wow-offset="0"
                 >
                   🛒
                 </span>
               </span>
               <span
                 style="display: block"
-                class="animate__fadeInLeft animate__animated animate__delay-2s animate__delay-05"
+                class="animate__fadeInLeft animate__animated wow"
+                data-wow-duration="1s"
+                data-wow-delay="0.3s"
+                data-wow-offset="0"
               >
                 ваши&nbsp;товары
               </span>
 
               <span
                 style="display: block"
-                class="animate__fadeInLeft animate__animated animate__delay-4s animate__delay-05"
+                class="animate__fadeInLeft animate__animated wow"
+                data-wow-duration="1s"
+                data-wow-delay="0.7s"
+                data-wow-offset="0"
               >
                 на&nbsp;<span class="highlight">маркетплейсах</span>
               </span>
@@ -85,69 +98,71 @@
               </a>
             </header>
 
-            <form class="welcome__right-side__form active" id="welcome-form">
-              <h4 class="welcome__right-side__form__heading">
-                Чтобы обсудить ваши задачи на маркетплейсах, оствьте заявку
-              </h4>
+            <div class="welcome__right-side__wrapper">
+              <form class="welcome__right-side__form active" id="welcome-form">
+                <h4 class="welcome__right-side__form__heading">
+                  Чтобы обсудить ваши задачи на маркетплейсах, оствьте заявку
+                </h4>
 
-              <input type="text" class="input-field" placeholder="Имя" />
-              <input
-                type="text"
-                required
-                class="input-field phone-mask"
-                placeholder="Телефон"
-              />
+                <input type="text" class="input-field" placeholder="Имя" />
+                <input
+                  type="text"
+                  required
+                  class="input-field phone-mask"
+                  placeholder="Телефон"
+                />
 
-              <div class="welcome__right-side__form__button-area">
-                <span class="animate__animated animate__fadeInLeft">
-                  <svg
-                    width="62"
-                    height="16"
-                    viewBox="0 0 62 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1
+                <div class="welcome__right-side__form__button-area">
+                  <span class="animate__animated animate__fadeInLeft">
+                    <svg
+                      width="62"
+                      height="16"
+                      viewBox="0 0 62 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1
                                     9L1 7ZM61.7071 8.70711C62.0976 8.31659 62.0976 7.68342 61.7071 7.2929L55.3432
                                     0.928937C54.9526 0.538413 54.3195 0.538412 53.9289 0.928937C53.5384 1.31946 53.5384
                                     1.95263 53.9289 2.34315L59.5858 8.00001L53.9289 13.6569C53.5384 14.0474 53.5384
                                     14.6805 53.9289 15.0711C54.3195 15.4616 54.9526 15.4616 55.3432 15.0711L61.7071
                                     8.70711ZM1 9L61 9.00001L61 7.00001L1 7L1 9Z"
-                      fill="#FDFDFD"
-                    />
-                  </svg>
-                </span>
+                        fill="#FDFDFD"
+                      />
+                    </svg>
+                  </span>
+
+                  <button
+                    class="default-button welcome__right-side__form__button"
+                  >
+                    Отправить заявку
+                  </button>
+                </div>
+
+                <p class="form-warning">
+                  Нажимая на кнопку “Отправить заявку”, вы соглашаетесь
+                  с&nbsp;условиями
+                  <a href="policy-privacy.html" target="_blank"
+                    >“Политики конфиденциальности”</a
+                  >
+                </p>
+              </form>
+
+              <div class="welcome__right-side__thanks-window">
+                <h3>
+                  Спасибо! Заявка&nbsp;принята! Мы&nbsp;скоро свяжемся
+                  с&nbsp;вами для консультации
+                </h3>
 
                 <button
-                  class="default-button welcome__right-side__form__button"
+                  id="welcome-thanks-button"
+                  type="button"
+                  class="default-button welcome__right-side__thanks-window__button"
                 >
-                  Отправить заявку
+                  Ура!
                 </button>
               </div>
-
-              <p class="form-warning">
-                Нажимая на кнопку “Отправить заявку”, вы соглашаетесь
-                с&nbsp;условиями
-                <a href="policy-privacy.html" target="_blank"
-                  >“Политики конфиденциальности”</a
-                >
-              </p>
-            </form>
-
-            <div class="welcome__right-side__thanks-window">
-              <h3>
-                Спасибо! Заявка&nbsp;принята! Мы&nbsp;скоро свяжемся с&nbsp;вами
-                для консультации
-              </h3>
-
-              <button
-                id="welcome-thanks-button"
-                type="button"
-                class="default-button welcome__right-side__thanks-window__button"
-              >
-                Ура!
-              </button>
             </div>
           </div>
         </div>
@@ -987,28 +1002,99 @@
             <h3 class="manager__info__title">Менеджер для вас:</h3>
 
             <ul class="manager__info__list">
-              <li class="manager__info__list__item">Всегда на связи</li>
-              <li class="manager__info__list__item">Контролирует поставки</li>
-              <li class="manager__info__list__item">
+              <li
+                class="manager__info__list__item wow animate__fadeInLeft animate__animated"
+                data-wow-duration="1.5s"
+                data-wow-offset="0"
+              >
+                Всегда на связи
+              </li>
+              <li
+                class="manager__info__list__item wow animate__fadeInLeft animate__animated"
+                data-wow-duration="1.5s"
+                data-wow-delay="0.2s"
+                data-wow-offset="0"
+              >
+                Контролирует поставки
+              </li>
+              <li
+                class="manager__info__list__item wow animate__fadeInLeft animate__animated"
+                data-wow-duration="1.5s"
+                data-wow-delay="0.4s"
+                data-wow-offset="0"
+              >
                 Информирует об изменениях
               </li>
-              <li class="manager__info__list__item">
+              <li
+                class="manager__info__list__item wow animate__fadeInLeft animate__animated"
+                data-wow-duration="1.5s"
+                data-wow-delay="0.6s"
+                data-wow-offset="0"
+              >
                 Курирует рекламные кампании
               </li>
-              <li class="manager__info__list__item">
+              <li
+                class="manager__info__list__item wow animate__fadeInLeft animate__animated"
+                data-wow-duration="1.5s"
+                data-wow-delay="0.8s"
+                data-wow-offset="0"
+              >
                 Решает проблемы с поддержкой
               </li>
-              <li class="manager__info__list__item">
+              <li
+                class="manager__info__list__item wow animate__fadeInLeft animate__animated"
+                data-wow-duration="1.5s"
+                data-wow-delay="1s"
+                data-wow-offset="0"
+              >
                 Отвечает на отзывы и вопросы
               </li>
-              <li class="manager__info__list__item">
+              <li
+                class="manager__info__list__item wow animate__fadeInLeft animate__animated"
+                data-wow-duration="1.5s"
+                data-wow-delay="1.2s"
+                data-wow-offset="0"
+              >
                 Вносит изменения в товары
               </li>
-              <li class="manager__info__list__item">Создает дизайн карточек</li>
-              <li class="manager__info__list__item">Ведет SEO оптимизацию</li>
-              <li class="manager__info__list__item">Отслеживает акции</li>
-              <li class="manager__info__list__item">Создает отчеты</li>
-              <li class="manager__info__list__item">
+              <li
+                class="manager__info__list__item wow animate__fadeInLeft animate__animated"
+                data-wow-duration="1.5s"
+                data-wow-delay="1.4s"
+                data-wow-offset="0"
+              >
+                Создает дизайн карточек
+              </li>
+              <li
+                class="manager__info__list__item wow animate__fadeInLeft animate__animated"
+                data-wow-duration="1.5s"
+                data-wow-delay="1.6s"
+                data-wow-offset="0"
+              >
+                Ведет SEO оптимизацию
+              </li>
+              <li
+                class="manager__info__list__item wow animate__fadeInLeft animate__animated"
+                data-wow-duration="1.5s"
+                data-wow-delay="1.8s"
+                data-wow-offset="0"
+              >
+                Отслеживает акции
+              </li>
+              <li
+                class="manager__info__list__item wow animate__fadeInLeft animate__animated"
+                data-wow-duration="1.5s"
+                data-wow-delay="2s"
+                data-wow-offset="0"
+              >
+                Создает отчеты
+              </li>
+              <li
+                class="manager__info__list__item wow animate__fadeInLeft animate__animated"
+                data-wow-duration="1.5s"
+                data-wow-delay="2.2s"
+                data-wow-offset="0"
+              >
                 И не только
 
                 <button type="button" class="manager__info__btn">
@@ -1133,70 +1219,72 @@
           </h2>
 
           <div class="offer__wrapper">
-            <form class="offer__wrapper__form active" id="offer-form">
-              <img
-                src="images/icons/hand.png"
-                alt=""
-                class="offer__wrapper__form__hand"
-              />
+            <div class="offer__forma">
+              <form class="offer__wrapper__form active" id="offer-form">
+                <img
+                  src="images/icons/hand.png"
+                  alt=""
+                  class="offer__wrapper__form__hand"
+                />
 
-              <input
-                type="text"
-                placeholder="Имя"
-                name="name"
-                class="input-field bordered"
-              />
+                <input
+                  type="text"
+                  placeholder="Имя"
+                  name="name"
+                  class="input-field bordered"
+                />
 
-              <input
-                type="phone"
-                placeholder="Телефон"
-                name="phone"
-                required
-                class="input-field bordered phone-mask"
-              />
+                <input
+                  type="phone"
+                  placeholder="Телефон"
+                  name="phone"
+                  required
+                  class="input-field bordered phone-mask"
+                />
 
-              <button
-                type="button"
-                class="orange-button offer__wrapper__form__btn"
-              >
-                Отправить заявку
-              </button>
-            </form>
+                <button
+                  type="button"
+                  class="orange-button offer__wrapper__form__btn"
+                >
+                  Отправить заявку
+                </button>
+              </form>
 
-            <div class="offer__wrapper__bottom active">
-              <p class="offer__wrapper__bottom__text">
-                Эксперт свяжется с&nbsp;вами и&nbsp;проконсультирует
-                по&nbsp;вопросам старта и&nbsp;развития продаж
-              </p>
+              <div class="offer__wrapper__bottom active">
+                <p class="offer__wrapper__bottom__text">
+                  Эксперт свяжется с&nbsp;вами и&nbsp;проконсультирует
+                  по&nbsp;вопросам старта и&nbsp;развития продаж
+                </p>
 
-              <p class="offer__wrapper__bottom__privacy">
-                Нажимая на “Отправить заявку” вы соглашаетесь с условиями
-                <a href="/privacy"> “Политики конфиденциальности” </a>
-              </p>
-            </div>
-
-            <div class="offer__thanks" id="offerThanks">
-              <img
-                src="images/icons/ok.png"
-                alt=""
-                class="offer__thanks__icon"
-              />
-              <div class="offer__thanks__text">
-                <h2>Ваша заявка принята! Скоро свяжемся!</h2>
-
-                <p>
-                  Эксперт свяжется с вамии проконсультирует по вопросам старта и
-                  развития продаж
+                <p class="offer__wrapper__bottom__privacy">
+                  Нажимая на “Отправить заявку” вы соглашаетесь с условиями
+                  <a href="/privacy"> “Политики конфиденциальности” </a>
                 </p>
               </div>
 
-              <button
-                class="offer__thanks__btn orange-button welcome__right-side__thanks-window__button"
-                type="button"
-                id="offerThanksButton"
-              >
-                Ура!
-              </button>
+              <div class="offer__thanks" id="offerThanks">
+                <img
+                  src="images/icons/ok.png"
+                  alt=""
+                  class="offer__thanks__icon"
+                />
+                <div class="offer__thanks__text">
+                  <h2>Ваша заявка принята! Скоро свяжемся!</h2>
+
+                  <p>
+                    Эксперт свяжется с вамии проконсультирует по вопросам старта
+                    и развития продаж
+                  </p>
+                </div>
+
+                <button
+                  class="offer__thanks__btn orange-button welcome__right-side__thanks-window__button"
+                  type="button"
+                  id="offerThanksButton"
+                >
+                  Ура!
+                </button>
+              </div>
             </div>
 
             <div class="offer__contacts">

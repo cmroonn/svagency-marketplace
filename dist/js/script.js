@@ -120,6 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
     spaceBetween: 100,
     infinite: true,
     effect: "fade",
+    allowTouchMove: false,
     fadeEffect: {
       crossFade: true
     },
@@ -127,13 +128,34 @@ document.addEventListener("DOMContentLoaded", function () {
       nextEl: ".stats__button-next",
       prevEl: ".stats__button-prev"
     }
-  });
+  }); // statSwiper.on("transitionStart", async function (swiper) {
+  //   let activeSlide = swiper.el.querySelector(".swiper-slide-active");
+  //   let nextSlide = swiper.el.querySelector(".swiper-slide-next");
+  //   activeSlide.classList.add("animate__animated", "animate__fadeOut");
+  //   nextSlide.classList.add(
+  //     "animate__animated",
+  //     "animate__fadeIn",
+  //     "animate__delay-1s"
+  //   );
+  //   activeSlide.addEventListener("animationend", () => {
+  //     activeSlide.classList.remove("animate__animated", "animate__fadeOut");
+  //   });
+  //   nextSlide.addEventListener("animationend", () => {
+  //     nextSlide.classList.remove(
+  //       "animate__animated",
+  //       "animate__fadeIn",
+  //       "animate__delay-1s"
+  //     );
+  //   });
+  // });
+
   var managerSwiper = new Swiper("#managerSwiper", {
     speed: 500,
     loop: true,
     spaceBetween: 100,
     infinite: true,
     effect: "fade",
+    allowTouchMove: false,
     slidesPerView: 1,
     fadeEffect: {
       crossFade: true
@@ -462,11 +484,27 @@ document.addEventListener("DOMContentLoaded", function () {
     var beeTween = gsap.to("#bee", {
       keyframes: [{
         x: 0,
-        y: -50
+        y: -12,
+        duration: 0.8
+      }, {
+        x: 0,
+        y: -25,
+        duration: 1.2
+      }, {
+        x: 0,
+        y: -12,
+        duration: 0.8
+      }, {
+        x: 0,
+        y: 5,
+        duration: 1
+      }, {
+        x: 0,
+        y: 0,
+        duration: 0.5
       }],
       ease: "none",
-      paused: true,
-      duration: 0.6
+      paused: true
     });
     var bee = document.getElementById("bee");
     bee.addEventListener("click", /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
@@ -475,29 +513,17 @@ document.addEventListener("DOMContentLoaded", function () {
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return beeTween.play();
+              return beeTween.restart();
 
             case 2:
               _context.next = 4;
-              return beeTween.reverse();
+              return beeTween.restart();
 
             case 4:
               _context.next = 6;
-              return beeTween.play();
+              return beeTween.restart();
 
             case 6:
-              _context.next = 8;
-              return beeTween.reverse();
-
-            case 8:
-              _context.next = 10;
-              return beeTween.play();
-
-            case 10:
-              _context.next = 12;
-              return beeTween.reverse();
-
-            case 12:
             case "end":
               return _context.stop();
           }
@@ -530,6 +556,14 @@ document.addEventListener("DOMContentLoaded", function () {
               return tween.restart();
 
             case 2:
+              _context2.next = 4;
+              return tween.restart();
+
+            case 4:
+              _context2.next = 6;
+              return tween.restart();
+
+            case 6:
             case "end":
               return _context2.stop();
           }
